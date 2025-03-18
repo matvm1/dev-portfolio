@@ -5,7 +5,6 @@ import IntroCard from "../components/IntroCard.astro";
 import ContactsCard from "../components/ContactsCard.astro";
 import AboutMe from "../components/AboutMe.astro";
 import Now from "../components/Now.astro";
-import Globe from "../components/Globe";
 import { getCollection } from "astro:content";
 import { formatDate } from "../lib/helpers";
 
@@ -56,9 +55,7 @@ const posts = (await getCollection("blog"))?.sort(
       href="travel"
       colorText="text-neutral-900"
     >
-      <div class="h-full w-full absolute inset-0 -z-10">
-        <Globe client:load />
-      </div>
+
     </Card>
     <Card
       colSpan="md:col-span-1"

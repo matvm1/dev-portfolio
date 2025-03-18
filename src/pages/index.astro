@@ -3,7 +3,6 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card/index.astro";
 import IntroCard from "../components/IntroCard.astro";
 import ContactsCard from "../components/ContactsCard.astro";
-import TimeZone from "../components/TimeZoneCard.astro";
 import AboutMe from "../components/AboutMe.astro";
 import Now from "../components/Now.astro";
 import Globe from "../components/Globe";
@@ -49,7 +48,6 @@ const posts = (await getCollection("blog"))?.sort(
     <IntroCard />
     <AboutMe />
     <ContactsCard />
-    <TimeZone />
     <Now />
     <Card
       colSpan="md:col-span-1"

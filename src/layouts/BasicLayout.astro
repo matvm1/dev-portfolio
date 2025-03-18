@@ -20,23 +20,23 @@ const schema =
     ? {
         "@context": "http://schema.org",
         "@type": "Person",
-        name: "Gianmarco",
+        name: "Mateo",
         url: Astro.url.origin,
         sameAs: [LINKS.linkedin, LINKS.github],
         image: `${Astro.url.origin}/og-image.png`,
-        jobTitle: "Freelance Frontend Developer",
+        jobTitle: "Software Engineer",
         worksFor: {
           "@type": "Organization",
-          name: "Self-Employed",
+          name: "Freelancer",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Italy",
-            addressCountry: "IT",
+            addressLocality: "New York",
+            addressCountry: "USA",
           },
         },
         nationality: {
           "@type": "Country",
-          name: "Italy",
+          name: "United States",
         },
       }
     : {
@@ -51,13 +51,13 @@ const schema =
         image: `${Astro.url.origin}/og-image.png`, //TODO: dynamic
         author: {
           "@type": "Person",
-          name: "Gianmarco",
+          name: "Mateo",
           url: Astro.url.origin,
           sameAs: [LINKS.linkedin, LINKS.github],
         },
         publisher: {
           "@type": "Organization",
-          name: "Gianmarco",
+          name: "Mateo",
           logo: {
             "@type": "ImageObject",
             url: `${Astro.url.origin}/og-image.png`,

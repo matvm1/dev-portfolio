@@ -5,7 +5,6 @@ import IntroCard from "../components/IntroCard.astro";
 import AboutMe from "../components/AboutMe.astro";
 import Portfolio from "../components/Portfolio.astro";
 import WorkExperience from "../components/WorkExperience.astro";
-import Now from "../components/Now.astro";
 import { getCollection } from "astro:content";
 import { formatDate } from "../lib/helpers";
 
@@ -81,6 +80,5 @@ const posts = (await getCollection("blog"))?.sort(
         }
       </div>
     </Card>
-    <Now />
   </main>
 </Layout>

@@ -14,9 +14,9 @@ Education: 3 years at University of Central Florida, another 2 at Florida Intern
 Experience: QA Intern, DSA Tutor, Business Intelligence Developer, Technical Business Analyst, Senior Technical Business Analyst
 
 ## Where I started
-My interest in technology began early, back in my freshman year of highschool when I took a web development course. It introduced me to the basics of web design—nesting DOM elements and applying styles—but what really fascinated me was the power of reusability. I loved how I could make a single change to an attribute and see it reflected across multiple elements.  
+My interest in technology began early, back in my freshman year of high school when I took a web development course. It introduced me to the basics of web design—nesting DOM elements and applying styles—but what really fascinated me was the power of reusability. I loved how I could make a single change to an attribute and see it reflected across multiple elements.  
 
-This was the only computer-related course offered by my curriculum up until senior year, when AP Computer Science was introduced. I enrolled, and within a month, I knew I would be majoring in Computer Science.  
+This was the only computer-related course offered by my curriculum up until senior year when AP Computer Science was introduced. I enrolled, and within a month, I knew I would be majoring in Computer Science.  
 
 I enrolled at the University of Central Florida, seeing that they were reputable in the field. I did most of my undergraduate there, then finished at Florida International University. The highlight of my studies was the last course in the curriculum, one dedicated to working with a team of 4 (myself included) to deliver incremental features to an existing Forex trading platform. Adapting to a new tech stack (.NET), working in feature branches, and integrating team contributions after merging made software delivery an exciting and rewarding process.
 

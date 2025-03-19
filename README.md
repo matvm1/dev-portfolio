@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This portfolio website was built using an open-source template with modifications to fit my needs.
+This portfolio website was built using an open-source template with personalized modifications.
 
 ## Acknowledgments
 

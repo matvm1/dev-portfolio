@@ -28,7 +28,7 @@ const posts = (await getCollection("blog"))?.sort(
       {
         at: "-0.1",
         duration: 0.4,
-        delay: stagger(0.3),
+        delay: stagger(0.01),
         easing: spring({ velocity: 100, stiffness: 50, damping: 10 }),
       },
     ],

@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card/index.astro";
 import IntroCard from "../components/IntroCard.astro";
 import AboutMe from "../components/AboutMe.astro";
+import Portfolio from "../components/Portfolio.astro";
 import WorkExperience from "../components/WorkExperience.astro";
 import Now from "../components/Now.astro";
 import { getCollection } from "astro:content";
@@ -47,10 +48,10 @@ const posts = (await getCollection("blog"))?.sort(
     <IntroCard />
     <WorkExperience />
     <AboutMe />
-    <Now />
+    <Portfolio />
     <Card
       colSpan="md:col-span-1"
-      rowSpan="md:row-span-2 flex gap-4"
+      rowSpan="md:row-span-5 flex gap-4"
       title="Blog"
       href="/blog"
     >
@@ -80,5 +81,6 @@ const posts = (await getCollection("blog"))?.sort(
         }
       </div>
     </Card>
+    <Now />
   </main>
 </Layout>

@@ -13,19 +13,17 @@ const { title, date, id } = Astro.props;
 <li
   class="list-none w-full text-neutral-100 hover:text-neutral-400 ease-in-out transition-colors border-b-neutral-400 border-dashed border-b-1 my-2"
 >
-  <a
-    class="text-sm md:text-base decoration-none flex justify-between"
-    href={`/blog/${id}`}
+<a
+  class="text-sm md:text-base decoration-none flex flex-col justify-between"
+  href={`/blog/${id}`}
+>
+  <p class="w-full">{title}</p>
+  <time
+    class="text-left tabular-nums"
+    datetime={date.toISOString()}
+    data-date={date.toISOString()}
   >
-    <p class="inline-block whitespace-nowrap">
-      {title}
-    </p>
-    <time
-      class="text-right tabular-nums"
-      datetime={date.toISOString()}
-      data-date={date.toISOString()}
-    >
-      {formatDate(date)}
-    </time>
-  </a>
+    {formatDate(date)}
+  </time>
+</a>
 </li>

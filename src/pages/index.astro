@@ -49,36 +49,30 @@ const posts = (await getCollection("blog"))?.sort(
     <AboutMe />
     <Portfolio />
     <Card
-      colSpan="md:col-span-1"
-      rowSpan="md:row-span-5 flex gap-4"
-      title="Blog"
-      href="/blog"
-    >
-      <div class="flex flex-col gap-4">
-        {
-          posts?.slice(0, 3).map((post) => (
-            // <a
-            //   class="text-sm md:text-base decoration-none flex justify-between"
-            //   href={`/blog/${post.id}`}
-            // >
-            <div class="list-none w-full text-neutral-100 hover:text-neutral-400 ease-in-out transition-colors border-b-neutral-400 border-dashed border-b-1 my-0">
-              <p class="inline-block text-xs">
-                {post.data.title}
-              </p>
-              {post.data.pubDate && (
-                <time
-                  class="text-right tabular-nums text-xs"
-                  datetime={post.data.pubDate.toISOString()}
-                  data-date={post.data.pubDate.toISOString()}
-                >
-                  {formatDate(post.data.pubDate)}
-                </time>
-              )}
-            </div>
-            // </a>
-          ))
-        }
-      </div>
-    </Card>
+    colSpan="md:col-span-1"
+    rowSpan="md:row-span-5 flex gap-4"
+    title="Blog"
+    href="/blog"
+  >
+    <div class="flex flex-col gap-4">
+      {
+        posts?.slice(0, 3).map((post) => (
+          <div class="list-none w-full text-neutral-100 hover:text-neutral-400 ease-in-out transition-colors border-b-neutral-400 border-dashed border-b-1 my-0 flex flex-col">
+            <p class="text-xs">{post.data.title}</p>
+            {post.data.pubDate && (
+              <time
+                class="text-left tabular-nums text-xs"
+                datetime={post.data.pubDate.toISOString()}
+                data-date={post.data.pubDate.toISOString()}
+              >
+                {formatDate(post.data.pubDate)}
+              </time>
+            )}
+          </div>
+        ))
+      }
+    </div>
+  </Card>
+  
   </main>
 </Layout>

@@ -67,7 +67,7 @@ While this may be inefficient for shuffling an entire list, it helped me realize
 
 Generate the random index, create a pointer to that object, move the last object into that index, and return the pointer. This preserves the contiguity of the queue, ensuring that there is always an element at any index from 0 to the size of the queue. By preventing these gaps, any dequeue operation takes at most O(1) time (with exception of the halving event).  
 
-## Thoughts
+# Thoughts
 Amortized analysis is one of those areas in technology that isn't a simple yes/no answer or some formula that derives an answer. Will the client use the solution appropriately? What defines "rarity"? What is considered a misuse of the solution? Perhaps I need to learn more on the subject (probably), but at this point it seems like the approach is an even more rounded guess than what operational runtime analysis already is.  
 
 Regarding the lecture on queues, it was very interesting. I had never considered using an array for stack/queue implementations, and have learned that they enable randomization in collections. From random sampling, lotteries, to random playlists, these are some of the applications enabled by this data structure. The problem was effective at demonstrating the complexity of amortized analysis, and allowed me to see that a solution can be "good enough", with room for improvement via optimization.

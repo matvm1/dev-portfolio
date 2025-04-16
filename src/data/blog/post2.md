@@ -1,7 +1,7 @@
 ---
 title: "Amortized Analysis"
 description: "Amortized Analysis"
-pubDate: 2025-04-11
+pubDate: 2025-04-16
 category: "DSA"
 draft: false
 ---

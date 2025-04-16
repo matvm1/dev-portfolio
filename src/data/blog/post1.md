@@ -3,7 +3,7 @@ title: "Why I’m Transitioning Back to Software Engineering"
 description: "My reasoning for transitioning back to Software Engineering"
 pubDate: 2025-03-19
 category: "intro"
-draft: true
+draft: false
 ---
 
 # Introduction

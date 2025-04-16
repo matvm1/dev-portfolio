@@ -79,7 +79,7 @@ console.log("headings", entry, id);
   }
 
   a {
-    color: #1a0dab;
+    color: #E63946;
     text-decoration: none;
   }
 
@@ -102,19 +102,24 @@ console.log("headings", entry, id);
   pre,
   code {
     font-family: "Courier New", monospace;
-    background-color: #f4f4f4;
+    font-size: 90%;
     border-radius: 5px;
   }
-
+  code {
+    background-color: #24292e;
+    color: #ffffff;
+    padding: 2px 4px;
+  }
   pre {
     padding: 10px;
     overflow-x: auto;
+    background: none; /* Remove background color */
   }
 
-  code {
-    padding: 2px 4px;
-    font-size: 90%;
-    color: #d63384;
+  pre code {
+    background: none;
+    color: #ffffff;
+    font-size: inherit; /* Keep the same font size as pre */
   }
 
   img {
